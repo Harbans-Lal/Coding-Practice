@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+header{
+    background-color: white;
+}
+li{
+    list-style-type: none;
+}
+nav{
+    width: 100%;
+    padding: 20px 30px 10px 100px;
+ justify-content: space-between;
+    display: flex;
+}
+.icons{
+    width: 50px;
+    color: blue;
+    padding-right: 250px;
+}
+ nav ul{
+ display: flex;
+ gap: 50px;
+ justify-content: space-between;
+}
+nav ul li{
+    color: rgba(4, 4, 38, 0.842);
+    font-size: 16px;
+}
+
+.buttton button{
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin-top: 2px;
+    height: 100vh;
+}
+main .left_box{
+    width: 27%;
+    height: 60%;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    
+}
+main .left_box .head{
+ background-color: black;
+ color: white;
+ padding: 30px 0px;
+ 
+
+}
+
+.center-Img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 76px;
+    left: 25px;
+    border: 1px solid black;
+}
+.center-Img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 60px;
+}
+.content{
+ width: 250px;
+ text-decoration: underline;
+}
+
+.left_box{
+    height: 60%;
+}
+.left_box .lower{
+    padding: 50px 10px;
+}
+.left_box .lower ul{
+    display: flex;
+    justify-content: space-between;
+}
+.left_box .lower ul li{
+    font-size: 16px;
+    color: rgba(4, 4, 38, 0.842);
+}
+.left_box .lower .secondul{
+    padding: 20px 0px;
+}
+.left_box .lower .secondul li{
+color: blue;
+font-size: 16px;
+text-align: start;
+}
+.center_box{
+    position: relative;
+    width: 46%;
+    padding: 0px 10px;
+    background-color: white;
+    margin: 0px 10px;
+    height: 80%;
+}
+.center_box .image{
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+.center_box .image .content1{
+    line-height: 16.5px;
+    width: 365px;
+}
+.center_box .image .content1 .text1 span{
+    color: black;
+    font-size: 16px;
+    font-family: 600;
+}
+.center_box .image .content1 .text1 ,.text2{
+    font-size: 16px;
+    color: rgba(4, 4, 38, 0.842);
+}
+.center_box .image .content1 .text2{
+    font-size: 16px;
+    color: rgba(4, 4, 38, 0.842);
+}
+.center_box .image .img-center{
+    border: 1px solid black;
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+}
+.center_box .image .img-center img{
+    width: 100%;
+    border-radius: 50%;
+    height: 43px;
+}
+
+.right_box{
+    width: 27%;
+    background-color: white;
+    padding: 0px 10px;
+    height: 60%;
+
+}
+.right_box h2{
+    padding: 10px 0px;
+}
+.right_box .wrapper{
+    display: flex;
+    margin: 10px 0px;
+
+}
+.right_box .wrapper .center{
+    border: 1px solid black;
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.right_box .wrapper .center img{
+    width: 100%;
+    border-radius: 50%;
+    height: 50px;
+}
+.right_box .wrapper  .content2 p{
+    font-size: 16px;
+    color: rgba(4, 4, 38, 0.842);
+}
+.right_box .wrapper  .content2 span{
+    font-size: 18px;
+    color: black 
+}
+.right_box .wrapper  .content2 button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    margin-top: 10px;
+    border: 1px solid blue;
+ 
+}

@@ -27,45 +27,10 @@ for(i=1; i< 1000000; i++){
 }
 
 let sommm = storeArLength.reduce((acc,val) =>val["arrLen"] > acc["arrLen"]?val:acc);
+document.write("<h4>The longest Collatz value from 1 to 1millon is: </h4>", sommm.value , "<br>");
 
 
-// console.log("All array>>>",storeArLength);
-console.log("hhhhh", sommm);
-
-//2.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
-
-function largestSubsequence(a,b){
-  let str = "";
-  let aArr = a.split('');
- let bArr = b.split('');
- let final ="";
-
-
-
-  console.log(aArr);
-  console.log(bArr);
-  console.log(final);
-}
-
-largestSubsequence("ABCBDAB","BDCAB") //BCAB
-
-//3.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
-
-let arr2 = [];
-for(i=0; i<20;i++){
-  let innerArr = [];
-  for(let j=0; j<20; j++){
-    let nestedArr = [];
-    if(i==j){
-      nestedArr.push(i,j)
-      innerArr.push(nestedArr);
-    }
-   
-  }
-  arr2.push(innerArr);
-}
-
-
+//2. >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const str = "AGGTAB";
 const str2 = "GXTXAYB";
 const allMatch = []
@@ -91,7 +56,7 @@ function getNewValue(str1, str2) {
     let targetIndex = -1;
     arr1.forEach((el, index) => {
         let arr2Copy = [...arr2]
-        const allPossibleIndex = getAllIndexes(arr2Copy, el)
+        const allPossibleIndex = getAllIndexes(arr2Copy, el)        
       for (let j = 0; j < allPossibleIndex.length; j++ ){
           
           if (allPossibleIndex[j] > -1 && allPossibleIndex[j] > targetIndex || allPossibleIndex[j] == 0 && targetIndex != allPossibleIndex[j] && targetIndex < 1) {
@@ -120,4 +85,5 @@ allMatch.forEach(targetStr => {
     }
 })
 
-console.log({longestMatchStr})
+document.write("<h4> the sting AGGTAB and  GXTXAYB has longest match string is: </h4>",longestMatchStr)
+
